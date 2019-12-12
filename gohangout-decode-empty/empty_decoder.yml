@@ -1,0 +1,5 @@
+inputs:
+    - Stdin:
+        codec: '/path/to/emptydecoder.so'
+outputs:
+    - Stdout: {}

@@ -1,0 +1,4 @@
+inputs:
+    - '/path/go/dot.so': {}
+outputs:
+    - Stdout: {}

@@ -1,0 +1,4 @@
+inputs:
+    - Stdin: {}
+outputs:
+    - '/path/to/dash.so': {}
