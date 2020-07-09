@@ -1,0 +1,10 @@
+inputs:
+    - Stdin: {}
+
+filters:
+    - 'title.so':
+        fields:
+            - message
+
+outputs:
+    - Stdout: {}
