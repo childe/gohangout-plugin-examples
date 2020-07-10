@@ -1,6 +1,6 @@
 [https://github.com/childe/gohangout](https://github.com/childe/gohangout) 插件示例.
 
-解决 [https://github.com/childe/gohangout/issues/96](https://github.com/childe/gohangout/issues/96)
+把一条消息 Split 成多条. 解决 [https://github.com/childe/gohangout/issues/96](https://github.com/childe/gohangout/issues/96)
 
 Golang 的 Plugin 文档参考 [https://tip.golang.org/pkg/plugin/](https://tip.golang.org/pkg/plugin/)
 
