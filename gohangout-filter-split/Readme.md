@@ -20,7 +20,10 @@ inputs:
 
 filters:
     - 'path/to/split.so':
-        fields: [message]
+        field: message
+        sep: '#'
+        drop_original_event: false
+        deep_copy: true
 
 outputs:
     - Stdout: {}
