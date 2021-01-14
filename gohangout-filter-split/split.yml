@@ -2,9 +2,9 @@ inputs:
     - Stdin: {}
 
 filters:
-    - 'title.so':
-        fields:
-            - message
+    - 'split.so':
+        sep: ' '
+        field: 'message'
 
 outputs:
     - Stdout: {}
