@@ -2,9 +2,12 @@ inputs:
     - Stdin: {}
 
 filters:
-    - 'split.so':
+    - './split.so':
         sep: ' '
         field: 'message'
+    - Add:
+        fields:
+            a: 'a'
 
 outputs:
     - Stdout: {}

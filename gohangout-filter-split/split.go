@@ -2,12 +2,14 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"strings"
 
 	"github.com/childe/gohangout/topology"
 )
 
 func (f *SplitFilter) SetBelongTo(next topology.Processor) {
+	fmt.Printf("%#v\n", next)
 	f.next = next
 }
 
@@ -82,6 +84,7 @@ func (p *SplitFilter) Filter(event map[string]interface{}) (map[string]interface
 				return event, false
 			}
 			newEvent[p.field] = part
+			fmt.Println(newEvent)
 			p.next.Process(newEvent)
 		}
 	} else {
