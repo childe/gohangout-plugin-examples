@@ -1,0 +1,12 @@
+inputs:
+  - Stdin:
+      codec: json
+filters:
+  - '/usr/local/lib/go/src/github.com/childe/gohangout/gohangout-filter-flat-json.so':
+      field: message
+  - Remove:
+      fields:
+        - message
+outputs:
+  - Stdout:
+      codec: json
