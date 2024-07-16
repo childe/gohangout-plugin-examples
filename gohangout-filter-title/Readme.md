@@ -4,10 +4,15 @@ Golang 的 Plugin 文档参考 [https://tip.golang.org/pkg/plugin/](https://tip.
 
 ## 编译
 
-将 title.go 复制到 gohangout 主目录下面, 运行
-
-```shell
+```sh
+go mod tidy
 go build -buildmode=plugin -o title.so title.go
+```
+
+## 安装与之对应的 gohangut 版本
+
+```sh
+go install github.com/childe/gohangout@v1.10.4
 ```
 
 ## gohangout 配置示例 
